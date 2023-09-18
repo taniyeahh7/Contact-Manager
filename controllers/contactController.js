@@ -23,7 +23,6 @@ const createContact=(req,res)=>{//putting a request probably new
 }
 
 
-
 //@desc Update new contacts
 //@route PUT /api/contacts/:id
 //@access public
