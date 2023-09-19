@@ -1,6 +1,6 @@
 //@desc get all contacts
 //@route GET /api/contacts
-//@access public later onna make orivate
+//@access public later gonna make private
 
 const getContacts=(req,res)=>{//basically want to send a
     res.status(200).json({message:"Get all contacts"});
@@ -8,7 +8,7 @@ const getContacts=(req,res)=>{//basically want to send a
 
 //@desc Get new contacts
 //@route GET /api/contacts/:id
-//@access public later onna make orivate
+//@access public 
 
 const getContact=(req,res)=>{//getting for the particular 
     res.status(200).json({message:`Get contact for ${req.params.id}`});
@@ -16,9 +16,10 @@ const getContact=(req,res)=>{//getting for the particular
 
 //@desc Create new contacts
 //@route POST /api/contacts
-//@access public later onna make orivate
+//@access public
 
 const createContact=(req,res)=>{//putting a request probably new
+    console.log("The request body is :",req.body);
     res.status(201).json({message:"Create contact"});
 }
 
